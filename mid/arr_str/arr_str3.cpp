@@ -10,50 +10,9 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    void setZeroes(vector<vector<int>> &matrix)
-    {
-        int m = matrix.size();
-        if (m < 1 || m > 200)
-            return;
-        int n = matrix[0].size();
-        if (n < 1 || n > 200)
-            return;
-        unordered_map<int, int> mapi;
-        unordered_map<int, int> mapj;
-
-        for (int i = 0; i < m; ++i)
-        {
-            for (int j = 0; j < n; ++j)
-            {
-                if ((matrix[i][j] < -pow(2, 31)) || (matrix[i][j] > pow(2, 31) - 1))
-                    return;
-                if (matrix[i][j] == 0)
-                {
-                    mapi[i] = 0;
-                    mapj[j] = 0;
-                }
-
-            }
-        }
-        unordered_map<int, int>::iterator iter;
-        for (iter = mapi.begin(); iter != mapi.end(); ++iter)
-        {
-            for (int j = 0; j < n; ++j)
-            {
-                matrix[iter->first][j] = 0;
-            }
-        }
-        for (iter = mapj.begin(); iter!=mapj.end(); ++iter)
-        {
-            for (int i = 0; i < m; ++i)
-            {
-                matrix[i][iter->first] = 0;
-            }
-        }
-
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
 
     }
 };
