@@ -15,3 +15,10 @@ include_directories(
 add_executable(as1  mid/arr_str/arr_str1.cpp)
 add_executable(as2  mid/arr_str/arr_str2.cpp)
 add_executable(as3  mid/arr_str/arr_str3.cpp)
+add_executable(as4  mid/arr_str/arr_str4.cpp)
+add_executable(as5  mid/arr_str/arr_str5.cpp)
+
+
+
+
+add_executable(ed1  everyday/1518.cpp)
