@@ -19,6 +19,8 @@ add_executable(as4  mid/arr_str/arr_str4.cpp)
 add_executable(as5  mid/arr_str/arr_str5.cpp)
 add_executable(as6  mid/arr_str/arr_str6.cpp)
 
+add_executable(ll1  mid/linked_list/ll1.cpp)
+add_executable(ll2  mid/linked_list/ll2.cpp)
 
 
 
